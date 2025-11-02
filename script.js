@@ -58,6 +58,7 @@ const baseMovies = [
     new Movie(8, "Rat Race", 2001, 5),
     new Movie(13, "Thor", 2011, 3),
     new Movie(10, "The Mask", 1994, 5),
+    new Movie(14, "The Open House", 2018, 1),
     new Movie(5, "Stand by Me", 1986, 5),
     new Movie(9, "The Notebook", 2004, 5),
     new Movie(7, "The Shawshank Redemption", 1994, 5),

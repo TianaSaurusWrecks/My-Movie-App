@@ -1,0 +1,126 @@
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+/* base layout */
+body {
+    margin: 0;
+    background-color: #111;
+    font-family: "Old Standard TT", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+/* Header Styling */
+header {
+    background-color:#fff;
+    color: #111;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Limelight", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Background Image of Theatre */
+.theatre {
+    background-image: url("/images/theatre-edited-public-domain-vectorsunsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 97%;
+    height: 650px;
+    max-width: 1600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Screen Area Overlay */
+.screen {
+    width: 40%;
+    height: 62%;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto;
+    transition: opacity 0.5s ease;
+    /* screen-glow */
+    box-shadow: 0 0 40px rgba(255, 250, 200, 0.7),
+    0 0 80px rgba(255, 255, 220, 0.5);
+    background-image: radial-gradient(circle at center,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.8),
+    rgba(240, 240, 240, 0.6));
+}
+
+/* fade in when content updates */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Popcorn buttons (footer controls) */
+.controls {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+
+.controls img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3 ease;
+}
+
+.controls button:hover img {
+    transform: scale(1.1);
+}
+
+/* Form and List inside screen */
+input {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #888;
+}
+
+button.action {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #61dafb;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.action:hover {
+    background-color: #21a1f1;
+}

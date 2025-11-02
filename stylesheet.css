@@ -31,7 +31,7 @@ header {
 /* Background Image of Theatre */
 .theatre {
     /* background-image: url("/images/theatre-edited-public-domain-vectorsunsplash.jpg"); */
-    background-image: url("/images/squaredpublic-domain-vectors-edited2-unsplash.jpg"); 
+    background-image: url("images/squaredpublic-domain-vectors-edited2-unsplash.jpg"); 
     background-size: cover;
     background-position: center;
     width: 100%;

@@ -31,7 +31,7 @@ header {
 /* Background Image of Theatre */
 .theatre {
     /* background-image: url("/images/theatre-edited-public-domain-vectorsunsplash.jpg"); */
-    background-image: url("images/squaredpublic-domain-vectors-edited2-unsplash.jpg"); 
+    background-image: url("images/croppedsquaredpublic-domain-vectors-edited2-unsplash\ -\ Copy.jpg"); 
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -50,7 +50,7 @@ header {
 /* Screen Area Overlay */
 .screen {
     width: 40%;
-    height: 62%;
+    height: 65%;
     background-color: rgba(255, 255, 255, 0.85);
     color: #000;
     border-radius: 10px;
@@ -162,16 +162,15 @@ button.action:hover {
 @media (max-width: 900px) {
     .theatre {
         width: 100%;
-    }
+       
     .screen {
-        width: 80%;
+        width: 70%;
         padding: 1rem;
     }
     .header button {
         flex: 1 1 45%;
         font-size: 0.95rem;
     }  
+  }
 }
-
-
 

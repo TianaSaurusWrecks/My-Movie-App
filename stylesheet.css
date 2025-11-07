@@ -177,6 +177,9 @@ button.action:hover {
 @media (max-width: 768px) {
     .theatre {
         width: 100%;
+        margin-bottom: 60px;
+
+    }
        
     .screen {
         width: 70%;
@@ -184,12 +187,20 @@ button.action:hover {
         margin-bottom: 300px;
         padding-top: 0;
         padding-bottom: 50px;
-        max-height: 400px;
+        max-height: 350px;
     }
     .header button {
         flex: 1 1 45%;
         font-size: 0.95rem;
     }  
+
+    .controls {
+        bottom: 15%;
+        gap: 25px;
+        padding: 8px;
+    }
+
+
   }
 }
 

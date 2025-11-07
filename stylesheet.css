@@ -21,9 +21,9 @@ header {
     color: #111;
     width: 100%;
     text-align: center;
-    padding: 5px 0;
+    
     font-family: "Limelight", sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }

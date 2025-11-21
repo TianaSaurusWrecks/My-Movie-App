@@ -178,11 +178,7 @@ function showDisplayMovies() {
     heading.textContent = "Movie List";
     output.appendChild(heading);
 
-    const refreshBtn = document.createElement("button");
-    refreshBtn.textContent = "Refresh";
-    output.appendChild(refreshBtn);
 
-    refreshBtn.onclick = () => displayMovies(movieList.getAll(), "Movie List");
 
     // Initial display
     displayMovies(movieList.getAll(), "Movie List");
@@ -338,6 +334,25 @@ function showDeleteMovie() {
         };
     }
 
+// Refresh Movie Section
+//
+function refreshMoviesBtnMovies() {
+    output.textContent = "";
+
+    const heading = document.createElement("h2");
+    heading.textContent = "Movie List";
+    output.appendChild(heading);
+
+    const refreshBtn = document.createElement("button");
+    refreshBtn.textContent = "Refresh";
+    output.appendChild(refreshBtn);
+
+    refreshBtn.onclick = () => displayMovies(movieList.getAll(), "Movie List");
+    
+    
+    
+}
+
 
 // Event Listeners for main buttons
 document.getElementById("addMovieBtn").onclick = showAddMovie;
@@ -345,6 +360,7 @@ document.getElementById("displayMoviesBtn").onclick = showDisplayMovies;
 document.getElementById("searchMoviesBtn").onclick = showSearchMovie;
 document.getElementById("sortMoviesBtn").onclick = showSortMovie;
 document.getElementById("deleteMovieBtn").onclick = showDeleteMovie;
+document.getElementById("refreshMoviesBtn").onclick = showDisplayMovies;
 
 // Display Movie List on Start
 window.onload = () => {
